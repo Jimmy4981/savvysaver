@@ -1,447 +1,76 @@
-body {
-  font-size: .875rem;
-  background-color: #21B789;
-}
-
-.feather {
-  width: 16px;
-  height: 16px;
-  vertical-align: text-bottom;
-}
-
-/*
- * Sidebar
- */
-
-.sidebar {
-  background-color: #21B789;
-  /* rtl:raw:
-  right: 0;
-  */
-  /* rtl:remove */
-  z-index: 100; /* Behind the navbar */
-  padding: 0;
-}
-
-.logo {
-  /* width: 60px; */
-  height: 60px;
-  object-fit: contain;
-}
-
-.b-example-divider {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-
-.bi {
-  vertical-align: -.125em;
-  pointer-events: none;
-  fill: currentColor;
-}
-
-.dropdown-toggle { outline: 0; }
-
-.nav-flush .nav-link {
-  border-radius: 0;
-}
-
-.btn-check:focus+.btn, .btn:focus {
-  outline: 0;
-  box-shadow: none;
-}
-
-.btn-toggle {
-  /* display: inline-flex; */
-  /* align-items: center; */
-  /* padding: .5rem 2rem; */
-  font-weight: 600;
-  color: rgba(0, 0, 0, .65);
-  background-color: transparent;
-  border: 0;
-  border-radius: 0 !important;
-  padding-left: 3rem;
-  /* font-size: .875rem !important; */
-  width: 100%;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px !important;
-  line-height: 16px;
-  color: #000000;
-}
-
-.nav-pills .nav-link.active {
-  color: #FFFFFF;
-  border-bottom: 5px solid #FFF;
-  background-color: #21B789;
-}
-
-.nav-pills .nav-link {
-  /* display: inline-flex; */
-  border-radius: 0;
-  text-align: left;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px !important;
-  line-height: 36px;
-  color: #FFFFFF;
-  background-color: transparent;
-  border-bottom: 5px solid #21B789;
-  width: 110%;
-}
-
-
-
-.nav-link {
-  padding: 1rem 1rem;
-}
-
-.nav-item-collapse {
-  align-items: center;
-  /* padding: 0rem 2rem; */
-  /* padding-left: 1rem; */
-  font-weight: 600;
-  color: #FFFFFF;
-  background-color: transparent;
-  border: 0;
-}
-
-.nav-item-collapse:hover,
-.nav-item-collapse:focus {
-  /* color: rgba(0, 0, 0, .85); */
-  /* background-color: #EDEDE8; */
-}
-
-.link-dark {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.link-dark:hover,
-.nav-item-collapse:focus {
-  font-weight: 600;
-}
-
-.btn-toggle-nav {
-  padding-left: 2rem;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #FFFFFF;
-  border-bottom: 5px solid #FFF;
-  background-color: #21B789;
-}
-
-.btn-toggle:hover,
-.btn-toggle:focus {
-  color: #FFFFFF;
-  border-bottom: 5px solid #FFF;
-  background-color: #21B789;
-}
-
-.btn-toggle::before {
-  width: 1.25em;
-  line-height: 0;
-  /* content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e"); */
-  transition: transform .35s ease;
-  transform-origin: .5em 50%;
-}
-
-.btn-toggle[aria-expanded="true"] {
-  color: rgba(0, 0, 0, .85);
-}
-.btn-toggle[aria-expanded="true"]::before {
-  transform: rotate(90deg);
-}
-
-.btn-toggle-nav a {
-  display: inline-flex;
-  padding: .1875rem .5rem;
-  margin-top: .125rem;
-  margin-left: 1.25rem;
-  text-decoration: none;
-}
-.btn-toggle-nav a:hover,
-.btn-toggle-nav a:focus {
-  /* color: rgba(0, 0, 0, .85); */
-  /* background-color: #EDEDE8; */
-}
-
-.scrollarea {
-  overflow-y: auto;
-}
-
-.fw-semibold { font-weight: 600; }
-.lh-tight { line-height: 1.25; }
-
-/*
- * Navbar
- */
-
-.navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: 1rem;
-  background-color: rgba(0, 0, 0, .25);
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
-}
-
-.navbar .navbar-toggler {
-  top: .25rem;
-  right: 1rem;
-}
-
-.navbar .form-control {
-  padding: .75rem 1rem;
-  border-width: 0;
-  border-radius: 0;
-}
-
-.form-control-dark {
-  color: #FFF;
-  background-color: rgba(255, 255, 255, .1);
-  border-color: rgba(255, 255, 255, .1);
-}
-
-.form-control-dark:focus {
-  border-color: transparent;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
-}
-
-.bg-main {
-  background-color: #FFF;
-  padding: 5rem;
-}
-
-.text-left {
-  text-align: left !important;
-}
-
-.h1 {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 108px;
-  color: #21B789;
-}
-
-.h2 {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  color: #21B789;
-}
-
-.h3 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  color: #C4C4C4;
-}
-
-.net-spend {
-  background-color: white;
-  border-radius: 2rem;
-  border: 1px solid rgba(135, 135, 135, 0.5);
-}
-
-.main-background {
-  /* position: absolute; */
-  top: 22px;
-
-  background: #FCFCFC;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  border-radius: 2rem;
-  z-index: 100;
-}
-.chart-description {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.chart-legend {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.net-spend-category {
-  background-color: #FFF;
-  border-radius: 1rem !important;
-  border: 1px solid #268050;
-}
-
-.net-spend-category-title {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.net-spend-category-value {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.net-spend-category-value-sml {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 27px;
-}
-
-.net-spend-category-percent {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #E4BC2B;
-}
-
-.progress {
-  border-radius: 15px;
-}
-.progress-bar {
-  background: #E4BC2B;
-  border-radius: 15px;
-}
-
-.btn-filter {
-  background: #FCFCFC;
-  width: 8rem;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  border-bottom: 5px solid #FCFCFC;
-  /* identical to box height */
-
-
-  color: #268050;
-}
-
-.select-filter {
-  width: 8rem;
-}
-
-option {
-  background: white !important;
-  font-family: Roboto !important;
-  text-align: left;
-  font-size: 12px;
-}
-
-.btn-active  {
-  /* background-color: #d8d8d8; */
-  border-bottom: 5px solid #268150;
-}
-
-.btn-filter:hover {
-  /* background-color: #d8d8d8; */
-  border-bottom: 5px solid #268150;
-  color: #268050;
-}
-
-.filter-label {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-
-  color: #268050;
-
-  margin-right: 1rem;
-}
-
-.code-headings {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #268050;
-}
-
-.code-inner {
-  background: #FCFCFC;
-  border: 1px solid #268050;
-  border-radius: 15px;
-}
-
-.code-amount {
-  font-family: Bree Serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 33px;
-}
-
-.transaction-table {
-  background-color: white;
-  max-height: 40rem;
-}
-
-.btn-save-code {
-  border-radius: 2rem;
-  height: 3rem;
-  width: 3rem;
-}
-
-.code-select {
-  border-radius: 1rem;
-}
-
-.code-box-shaddow {
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.275)!important;
-}
-
-.btn-save-budget {
-  font-weight: 600;
-  background-color: #FFF;
-}
-
-.form-control {
-  border: none;
-}
-
-.input-group-text {
-  border: none;
-}
-
-.budget-select {
-  border: none !important;
-}
-
-.period-spend-chart {
-  margin-left: 8rem;
-  margin-right: 8rem;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .header {
+      background-color: #f1f1f1;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 40px;
+    }
+
+    .budget-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+    }
+
+    .budget-table th,
+    .budget-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    .budget-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .budget-table th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    @media screen and (max-width: 600px) {
+      .header h1 {
+        font-size: 30px;
+      }
+
+      .budget-table {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Budget Planner</h1>
+  </div>
+
+  <table class="budget-table">
+    <tr>
+      <th>Item</th>
+      <th>Cost</th>
+    </tr>
+    <tr>
+      <td>Rent</td>
+      <td>$1000</td>
+    </tr>
+    <tr>
+      <td>Groceries</td>
+      <td>$400</td>
+    </tr>
+    <tr>
+      <td>Utilities</td>
+      <td>$200</td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>$150</td>
+    </tr>
+  </table>
+</body>
+</html>
